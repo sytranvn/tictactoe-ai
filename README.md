@@ -1,17 +1,18 @@
 # tic-tac-toe
 
-
+Tic-tac-toe game against my AI.
 
 <video src="https://github.com/user-attachments/assets/2db1d74c-1761-4233-bda1-eeefe1d24cd6">
 [demo](assets/output.mov)
 </video>
 
-## Alpha-Beta pruning 
+## Algorithm used
 
-[Alpha–beta
-pruning](https://en.wikipedia.org/wiki/Alpha%E2%80%93beta_pruning).
+### Alpha–beta pruning
 
-## Minimax
+[Alpha–beta pruning](https://en.wikipedia.org/wiki/Alpha%E2%80%93beta_pruning).
+
+### Minimax
 
 If current position is wins or lose to a player. Return `inf/-inf`
 accordingly.
@@ -23,7 +24,7 @@ Therefore we have to check terminal state with 5 level deep. If we
 ensure we will not lose in 5 moves, use `heuristic` function to
 consider next move to save time.
 
-## Heuristic evaluation
+### Heuristic evaluation
 
 Find all possible wins from current position by assuming we will
 occupy the remaining empty cells. From those winning states, count how
@@ -41,9 +42,9 @@ manage column using bitwise operators. We can use single number and go
 full bitwise but with 9x9 board, it will be 81 bits. Even though
 python can expand variable bits for us. I just don't like it.
 
-# Windows
+# For Windows
 
-Windows user must install `windows-curses`. 
+Windows user must install `windows-curses` by `pip install windows-curses`. 
 
 ## Disclaimer
 
